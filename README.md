@@ -13,3 +13,10 @@ The dataset is broken into two sets of video clips:  anomalous and normal.  Acti
 
 Normal:
 
+![Alt text](./chilled_door.png?raw=true "opening a chilled door")
+
+![Alt text](./lift.png?raw=true "server lift")
+
+Anomalous:
+
+![Alt text](./ladder.png?raw=true "ladder tipping over")
