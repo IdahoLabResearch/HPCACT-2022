@@ -34,9 +34,10 @@ This can be done by running tfr_from_mp4.py
 2. The file labels_corridor.py will take the per frame annotations provided and create a label for each SITSR created in step 1. We provided a way to change the limits of the label seeing how it is a concat of 30 frames that may have different label values.
 
 3. Inference
+
     This is done with the infer_quantize_model.py file.
     once you obtain the prediction to infer you must simply find the r value (the output) that splits the data the best by plotting or iterating through.
-    That is the cutoff between your Nomrmal and Anomolous predictions.
+    That is the cutoff between your Normal and Anomolous predictions.
 
     The int8 model provided is trained on the corridor dataset and quantized on Vitis AI Docker image Version: 2.5.0.1260 and Git Hash: d2cd3d7eb.
     Please follow the steps provided at https://docs.xilinx.com/r/en-US/ug1414-vitis-ai/Vitis-AI-Containers to install the container.
