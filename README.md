@@ -28,7 +28,7 @@ and comparison against the IITB-Corridor dataset.
 
 To Test the Corridor Trained OCNN model you will need to download the publicly available IITB-Corridor Dataset (instructions are here: https://rodrigues-royston.github.io/Multi-timescale_Trajectory_Prediction/).
 
-1. To start you will need to convert the MP4 files from Corridor into a tfrecord file that iterates through each video and every 30 frames concatanates the video for a simple input into the Model that won't take up your entire memory.
+1. To start you will need to convert the MP4 files from Corridor into a tfrecord file that iterates through each video and every 30 frames concatenates the video for a simple input into the Model that won't take up your entire memory.
 This can be done by running tfr_from_mp4.py
 
 2. The file labels_corridor.py will take the per frame annotations provided and create a label for each SITSR created in step 1. We provided a way to change the limits of the label seeing how it is a concat of 30 frames that may have different label values.
