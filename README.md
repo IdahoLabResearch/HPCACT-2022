@@ -9,7 +9,7 @@ Here is a list of the anomalous and normal activities represented in the dataset
 
 ![Alt text](./img/list_activities.png?raw=true "List of anomalous and normal activities in the HPCACT-2022 dataset")
 
-The dataset is broken into two sets of video clips:  anomalous and normal.  Activity identification and localization is partially complete for this dataset and will be added when complete.  Here are some example frames from the dataset.
+The dataset is broken into two sets of video clips:  anomalous and normal.  Here are some example frames from the dataset.
 
 ## Normal:
 
