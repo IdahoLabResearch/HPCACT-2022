@@ -50,3 +50,32 @@ This can be done by running tfr_from_mp4.py
     The model was quantized using the fast fine tune method following the steps provided in https://docs.xilinx.com/r/en-US/ug1414-vitis-ai
 
     To run this model you will need to be inside the Docker Container mentioned above and inside the conda environment tensorflow2.
+    
+    
+   # Citation and Contact
+If you use our dataset, please cite it:
+```
+@INPROCEEDINGS{,
+  author={Conger, Denver and Anderson, Matthew and Sgambati, Matthew and Petersen, Bryton and Biggs, Brandon and Spencer, Damon},
+  booktitle={}, 
+  title={}, 
+  year={},
+  volume={},
+  number={},
+  pages={},
+  doi={}}
+```
+If you find our paper useful, please cite it:
+```
+@INPROCEEDINGS{,
+  author={Conger, Denver and Anderson, Matthew and Sgambati, Matthew and Petersen, Bryton and Biggs, Brandon and Spencer, Damon},
+  booktitle={}, 
+  title={}, 
+  year={},
+  volume={},
+  number={},
+  pages={},
+  doi={}}
+```
+For any questions or concerns, please contact `matthew.anderson2@inl.gov`
+*** 
