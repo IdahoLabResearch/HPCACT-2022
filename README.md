@@ -23,7 +23,7 @@ The dataset is broken into two sets of video clips:  anomalous and normal.  Here
 
 The camera type used for all collection was an Amcrest 5 MP T1179EW. Each video was recorded at 2560 x 1920 at 20 frames per second.
 
-Source code is provided for anomaly detection detection
+Source code is provided for anomaly detection
 and comparison against the IITB-Corridor dataset.
 
 To Test the Corridor Trained OCNN model you will need to download the publicly available IITB-Corridor Dataset (instructions are here: https://rodrigues-royston.github.io/Multi-timescale_Trajectory_Prediction/).
