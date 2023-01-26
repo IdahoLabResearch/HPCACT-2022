@@ -3,7 +3,10 @@ The HPCACT-2022 dataset was created to help complement temporal action detection
 and anomalous activities where not all activities are human driven and where the same activity can be viewed from 
 multiple camera angles and with varying levels of occlusion.  The HPCACT-2022 dataset incorporates elements from an
 HPC datacenter setting where anomalies may arise from equipment or other non-human driven causes or an interaction
-between multiple non-human driven causes..
+between multiple non-human driven causes.
+
+**Note: To clone this repository, you will need to use git-lfs.**
+e.g. git-lfs clone https://github.com/IdahoLabResearch/HPCACT-2022.git
 
 Here is a list of the anomalous and normal activities represented in the dataset:
 
