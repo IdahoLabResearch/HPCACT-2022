@@ -14,6 +14,8 @@ Here is a list of the anomalous and normal activities represented in the dataset
 
 The dataset is broken into two sets of video clips:  anomalous and normal.  Here are some example frames from the dataset.
 
+Credit for the annotations goes to:
+Denver Conger, Ben Mahoney, Jacob Dickinson, Truman Hughes, Jaxon Lewis, Eva Roybal, Danielle Sleight, Miles Tudor
 ## Normal:
 
 ![Alt text](./img/chilled_door.png?raw=true "opening a chilled door")
@@ -23,6 +25,68 @@ The dataset is broken into two sets of video clips:  anomalous and normal.  Here
 ## Anomalous:
 
 ![Alt text](./img/ladder.png?raw=true "ladder tipping over")
+
+## Video Annotation Data Structure
+
+This repository JSON files that can easily be converted to a YOLO labeling structure, specifically designed to make sense for activity labeled video data. Below is a description of the generated JSON data structure:
+### JSON Structure
+
+```json
+{
+    "video_id_1": {
+        "filename": "path_to_video",
+        "framesCount": 1000,
+        "duration in seconds": 60,
+        "calculated_fps": 16,
+        "frames": {
+            "frame_number_1": [
+                {
+                    "bounding_box": {
+                        "x": 50.0,
+                        "y": 50.0,
+                        "width": 11.2,
+                        "height": 12.3
+                    },
+                    "label": "activity"
+                },
+                {
+                    "bounding_box": {
+                        "x": 150,
+                        "y": 150,
+                        "width": 200,
+                        "height": 200
+                    },
+                    "label": "activity"
+                }
+            ],
+            "frame_number_2": [
+                // Similar to frame_number_1 but for a different frame
+            ]
+            // Additional frames
+        }
+    },
+    "video_id_2": {
+        // Similar to video_id_1 but for a different video
+    }
+    // Additional video_ids
+}
+```
+
+### Field Descriptions
+
+- `video_id`: Unique identifier for the video.
+    - `filename`: The local file path to the video.
+    - `framesCount`: The total number of frames in the video.
+    - `duration in seconds`: The duration of the video in seconds.
+    - `calculated_fps`: The calculated frames-per-second (fps) for the video.
+    - `frames`: A dictionary where the keys are the frame numbers and the values are lists of bounding boxes and labels for objects in that frame.
+        - `frame_number`: The frame number within the video.
+            - `bounding_box`: Contains the x, y coordinates and the width and height of the bounding box.
+                - `x`: The x-coordinate of the top-left corner of the bounding box.
+                - `y`: The y-coordinate of the top-left corner of the bounding box.
+                - `width`: The width of the bounding box.
+                - `height`: The height of the bounding box.
+            - `label`: The label of the object within the bounding box.
 
 The camera type used for all collection was an Amcrest 5 MP T1179EW. Each video was recorded at 2560 x 1920 at 20 frames per second.
 
@@ -55,15 +119,17 @@ This can be done by running tfr_from_mp4.py
    # Citation and Contact
 If you use our dataset, please cite it:
 ```
-@INPROCEEDINGS{,
-  author={Conger, Denver and Anderson, Matthew and Sgambati, Matthew and Petersen, Bryton and Biggs, Brandon and Spencer, Damon},
-  booktitle={}, 
-  title={}, 
-  year={},
-  volume={},
-  number={},
-  pages={},
-  doi={}}
+@misc{
+doecode_99634,
+title = {Anomalous And Normal High Performance Computing Datacenter Activities},
+author = {Anderson, Matthew and Sgambati, Matthew R. and Conger, Denver S. and Jacobson, Brendan G. and Petersen, Bryton J. and Biggs, Brandon S.},
+abstractNote = {This code provides annotation and an interface to 10+ hours of video activities in a high performance datacenter with 20+ different types of anomalous activities. The purpose is to enable machine learning for video surveillance systems in high performance computing centers. This is the first code of this type addressing the space of high performance computing datacenters.},
+doi = {10.11578/dc.20230125.2},
+url = {https://doi.org/10.11578/dc.20230125.2},
+howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20230125.2}},
+year = {2022},
+month = {nov}
+}
 ```
 If you find our paper useful, please cite it:
 ```
