@@ -12,10 +12,10 @@ Here is a list of the anomalous and normal activities represented in the dataset
 
 ![Alt text](./img/list_activities.png?raw=true "List of anomalous and normal activities in the HPCACT-2022 dataset")
 
+Activities are annotated with labels and bounding boxes.  The annotations are found in HPC_ACT_labels.json.gz.  Credit for the annotations goes to Denver Conger, Jacob Dickinson, Truman Hughes, Jaxon Lewis, Ben Mahoney, Eva Roybal, Danielle Sleight, and Miles Tudor.
+
 The dataset is broken into two sets of video clips:  anomalous and normal.  Here are some example frames from the dataset.
 
-Credit for the annotations goes to:
-Denver Conger, Ben Mahoney, Jacob Dickinson, Truman Hughes, Jaxon Lewis, Eva Roybal, Danielle Sleight, Miles Tudor
 ## Normal:
 
 ![Alt text](./img/chilled_door.png?raw=true "opening a chilled door")
@@ -131,17 +131,7 @@ year = {2022},
 month = {nov}
 }
 ```
-If you find our paper useful, please cite it:
-```
-@INPROCEEDINGS{,
-  author={Conger, Denver and Anderson, Matthew and Sgambati, Matthew and Petersen, Bryton and Biggs, Brandon and Spencer, Damon},
-  booktitle={}, 
-  title={}, 
-  year={},
-  volume={},
-  number={},
-  pages={},
-  doi={}}
-```
+Credit for the annotations goes to Denver Conger, Jacob Dickinson, Truman Hughes, Jaxon Lewis, Ben Mahoney, Eva Roybal, Danielle Sleight, and Miles Tudor.
+
 For any questions or concerns, please contact `matthew.anderson2@inl.gov`
 *** 
